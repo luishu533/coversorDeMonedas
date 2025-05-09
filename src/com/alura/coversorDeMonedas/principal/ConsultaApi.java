@@ -24,6 +24,7 @@ public class ConsultaApi {
         } catch (Exception e) {
             throw new RuntimeException("error al consultar api");
         }
+
     }
 
 }

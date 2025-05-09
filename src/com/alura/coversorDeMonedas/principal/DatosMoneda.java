@@ -43,6 +43,12 @@ public class DatosMoneda {
     public static String obtenerCodigoIso(String nombre) {
         String clave = nombre.toLowerCase().trim();
         Moneda moneda = MONEDAS.get(clave);
-        return moneda != null ? moneda.codigoIso() : null;
+
+        if (moneda == null) {
+            System.out.println("Moneda no encontrada: " + nombre);
+            return null;
+        }
+
+        return moneda.codigoIso();
     }
 }
