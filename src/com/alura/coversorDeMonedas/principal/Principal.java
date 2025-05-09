@@ -42,7 +42,7 @@ public class Principal {
             ZonedDateTime fecha = ZonedDateTime.parse(fechaIngles, formatoIngles);
             DateTimeFormatter formatoEspanol = DateTimeFormatter.ofPattern(
                     "EEEE, dd MMMM yyyy",
-                    new Locale("es", "ES"));
+                    Locale.of("es", "ES"));
 
             System.out.println(
                     resultado.cantidad() + " " +
@@ -54,6 +54,7 @@ public class Principal {
             } catch (Exception e) {
             System.out.println("cantidad no valida");
             }
+        scanner.close();    
         }
 
     }
