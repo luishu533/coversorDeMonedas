@@ -55,8 +55,7 @@ public class Principal {
             } catch (Exception e) {
             System.out.println("cantidad no valida");
             }
-        scanner.close();    
         }
-
+        scanner.close();
     }
 }
