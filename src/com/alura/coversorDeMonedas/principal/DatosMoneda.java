@@ -10,13 +10,13 @@ public class DatosMoneda {
             Map.entry("dolar", new Moneda("dólar", "USD")),
             Map.entry("dolares", new Moneda("dólar", "USD")),
 
-            Map.entry("peso", new Moneda("peso", "MXN")),         // México
-            Map.entry("pesos", new Moneda("peso", "MXN")),
+            Map.entry("peso mexicano", new Moneda("peso mexicano", "MXN")),
+            Map.entry("pesos mexicanos", new Moneda("peso mexicano", "MXN")),
 
             Map.entry("peso argentino", new Moneda("peso argentino", "ARS")),
             Map.entry("pesos argentinos", new Moneda("peso argentino", "ARS")),
 
-            Map.entry("real", new Moneda("real", "BRL")),         // Brasil
+            Map.entry("real", new Moneda("real", "BRL")),
             Map.entry("reales", new Moneda("real", "BRL")),
 
             Map.entry("euro", new Moneda("euro", "EUR")),

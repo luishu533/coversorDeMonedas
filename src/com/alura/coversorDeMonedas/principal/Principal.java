@@ -1,5 +1,6 @@
 package com.alura.coversorDeMonedas.principal;
 
+import java.text.DecimalFormat;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
@@ -14,15 +15,21 @@ public class Principal {
         System.out.println("\n*************************************************");
         System.out.println("modo de uso: [cantidad] [moneda1] a [moneda2]");
         System.out.println("ejemplo: 1000 dolares a soles");
-        System.out.println("ingresa monto: ");
+        System.out.println("Para cerrar el programa escribe: salir");
+        System.out.println("*************************************************");
 
-
-        try {
+        while (true) {
+            try {
+            System.out.println("\ningresa monto: ");
             String frase = scanner.nextLine();
+            if (frase.toLowerCase().trim().equals("salir")) {
+                System.out.println("Programa finalizado");
+                break;
+            }
+
             FraseConversor.Resultado resultado = FraseConversor.analizar(frase);
-
+            DecimalFormat formato = new DecimalFormat("#.##");
             assert resultado != null;
-
 
             Conversor moneda = consultaApi.consultar(
                     DatosMoneda.obtenerCodigoIso(resultado.monedaOrigen()),
@@ -39,13 +46,15 @@ public class Principal {
 
             System.out.println(
                     resultado.cantidad() + " " +
-                    resultado.monedaOrigen() + " son: " +
-                            moneda.conversion_result() + " " +
+                            resultado.monedaOrigen() + " son: " +
+                            formato.format(moneda.conversion_result()) + " " +
                             resultado.monedaDestino() + "\nÚltima actualización: " +
                             fecha.format(formatoEspanol));
 
-        } catch (Exception e) {
+            } catch (Exception e) {
             System.out.println("cantidad no valida");
+            }
         }
+
     }
 }
