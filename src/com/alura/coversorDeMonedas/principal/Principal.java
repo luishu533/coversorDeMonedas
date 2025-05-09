@@ -43,7 +43,7 @@ public class Principal {
             Locale localeEspanol = Locale.forLanguageTag("es-ES");
             DateTimeFormatter formatoEspanol = DateTimeFormatter.ofPattern(
                     "EEEE, dd MMMM yyyy",
-                    Locale.of("es", "ES"));
+                    localeEspanol);
 
             System.out.println(
                     resultado.cantidad() + " " +
