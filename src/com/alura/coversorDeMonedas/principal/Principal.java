@@ -40,6 +40,7 @@ public class Principal {
             DateTimeFormatter formatoIngles = DateTimeFormatter.ofPattern(
                     "EEE, dd MMM yyyy HH:mm:ss Z", Locale.ENGLISH);
             ZonedDateTime fecha = ZonedDateTime.parse(fechaIngles, formatoIngles);
+            Locale localeEspanol = Locale.forLanguageTag("es-ES");
             DateTimeFormatter formatoEspanol = DateTimeFormatter.ofPattern(
                     "EEEE, dd MMMM yyyy",
                     Locale.of("es", "ES"));
