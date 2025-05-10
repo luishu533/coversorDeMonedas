@@ -21,29 +21,29 @@ destino, y realiza la conversión mostrando el resultado.
 
 1. Clona este repositorio:
    ```bash
-   git clone <URL_DEL_REPOSITORIO>
+   git clone https://github.com/luishu533/coversorDeMonedas.git
 2. Abre el proyecto en un IDE de Java (por ejemplo, Eclipse o IntelliJ IDEA).
 3. Asegúrate de que la biblioteca Gson esté configurada como dependencia.
 
 ## Uso
 1. Ejecuta el programa desde el IDE o desde la consola con el comando `java
-2. sigue las siguentes instruciones en la consola:
-    ° Ingrese el monto y las monedas en el formato.
-      <cantidad> <monedaOrigen> a <monedaDestino>
-    ° Por ejemplo: 100 dólares a soles.
+2. sigue las siguentes instruciones en la consola:  
+    ° Ingrese el monto y las monedas en el formato.  
+     `<cantidad> <monedaOrigen> a <monedaDestino>`  
+    ° Por ejemplo: 1000 dólares a soles.  
     ° Escribe "salir" para finalizar el programa.
 
 ## Ejemplo de Salida
-*************************************************
-Modo de uso: [cantidad] [moneda1] a [moneda2]
-ejemplo: 1000 dólares a soles
-Para cerrar el programa escribe: salir
-*************************************************
+    *************************************************
+    Modo de uso: [cantidad] [moneda1] a [moneda2]
+    ejemplo: 1000 dólares a soles
+    Para cerrar el programa escribe: salir
+    *************************************************
 
-ingresa monto: 
-1000 dolares a soles
-1000.0 dolares son: 3800.0 soles
-Última actualización: lunes, 25 septiembre 2023  
+    ingresa monto: 
+    1000 dolares a soles
+    1000.0 dolares son: 3800.0 soles
+    Última actualización: lunes, 7 mayo 2025  
 
 ## Estructura del Proyecto
     src/
@@ -59,13 +59,13 @@ ingresa monto:
                     ├── [Moneda.java]
                     └── [Principal.java]
 
-° Principal.java: Clase principal que ejecuta el programa.  
-° ConsultaApi.java: Realiza consultas a la API de tasas de cambio.  
-° DatosMoneda.java: Contiene un mapa de monedas soportadas.  
-° FraseConversor.java: Analiza la entrada del usuario.  
-° Moneda.java: Representa una moneda con su nombre y código ISO.  
-° Conversor.java: Modelo para los datos de conversión obtenidos de la API.   
-° Bienvenida.java: Contiene mensajes de bienvenida y ejemplos del modo de uso.
+° **Principal.java:** Clase principal que ejecuta el programa.  
+° **ConsultaApi.java:** Realiza consultas a la API de tasas de cambio.  
+° **DatosMoneda.java:** Contiene un mapa de monedas soportadas.  
+° **FraseConversor.java:** Analiza la entrada del usuario.  
+° **Moneda.java:** Representa una moneda con su nombre y código ISO.  
+° **Conversor.java:** Modelo para los datos de conversión obtenidos de la API.   
+° **Bienvenida.java:** Contiene mensajes de bienvenida y ejemplos del modo de uso.
 
 ## API Utilizada
 El proyecto utiliza la API de ExchangeRate-API para obtener las tasas de cambio. Asegúrate de reemplazar la clave 
