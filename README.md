@@ -46,24 +46,26 @@ ingresa monto:
 Última actualización: lunes, 25 septiembre 2023  
 
 ## Estructura del Proyecto
-src/
-└── com/
-    └── alura/
-        └── coversorDeMonedas/
-            └── principal/
-                ├── [ConsultaApi.java]
-                ├── [Conversor.java]
-                ├── [DatosMoneda.java]
-                ├── [FraseConversor.java]
-                ├── [Moneda.java]
-                └── [Principal.java]
+    src/
+    └── com/
+        └── alura/
+            └── coversorDeMonedas/
+                └── principal/
+                    ├── [Bienvenida.java]
+                    ├── [ConsultaApi.java]
+                    ├── [Conversor.java]
+                    ├── [DatosMoneda.java]
+                    ├── [FraseConversor.java]
+                    ├── [Moneda.java]
+                    └── [Principal.java]
 
-° Principal.java: Clase principal que ejecuta el programa.
-° ConsultaApi.java: Realiza consultas a la API de tasas de cambio.
-° DatosMoneda.java: Contiene un mapa de monedas soportadas.
-° FraseConversor.java: Analiza la entrada del usuario.
-° Moneda.java: Representa una moneda con su nombre y código ISO.
-° Conversor.java: Modelo para los datos de conversión obtenidos de la API.
+° Principal.java: Clase principal que ejecuta el programa.  
+° ConsultaApi.java: Realiza consultas a la API de tasas de cambio.  
+° DatosMoneda.java: Contiene un mapa de monedas soportadas.  
+° FraseConversor.java: Analiza la entrada del usuario.  
+° Moneda.java: Representa una moneda con su nombre y código ISO.  
+° Conversor.java: Modelo para los datos de conversión obtenidos de la API.   
+° Bienvenida.java: Contiene mensajes de bienvenida y ejemplos del modo de uso.
 
 ## API Utilizada
 El proyecto utiliza la API de ExchangeRate-API para obtener las tasas de cambio. Asegúrate de reemplazar la clave 
