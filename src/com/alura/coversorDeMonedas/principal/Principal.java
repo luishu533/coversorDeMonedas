@@ -13,25 +13,17 @@ public class Principal {
         ConsultaApi consultaApi = new ConsultaApi();
         Scanner scanner = new Scanner(System.in);
         System.out.println("\n" +
-                "   ______                                                  __   \n" +
-                "  / ____/___  ____ _   _____  ______________  _____   ____/ /__ \n" +
-                " / /   / __ \\/ __ \\ | / / _ \\/ ___/ ___/ __ \\/ ___/  / __  / _ \\\n" +
-                "/ /___/ /_/ / / / / |/ /  __/ /  (__  ) /_/ / /     / /_/ /  __/\n" +
-                "\\____/\\____/_/ /_/|___/\\___/_/  /____/\\____/_/      \\__,_/\\___/ \n" +
-                "                                                                \n" +
-                "    __  ___                     __          \n" +
-                "   /  |/  /___  ____  ___  ____/ /___ ______\n" +
-                "  / /|_/ / __ \\/ __ \\/ _ \\/ __  / __ `/ ___/\n" +
-                " / /  / / /_/ / / / /  __/ /_/ / /_/ (__  ) \n" +
-                "/_/  /_/\\____/_/ /_/\\___/\\__,_/\\__,_/____/  ");
-        System.out.println("\n" +
-                "+-+-+ +-+-+-+-+ +-+-+-+-+-+-+\n" +
-                "|B|y| |L|u|i|s| |H|u|a|n|c|a|\n" +
-                "+-+-+ +-+-+-+-+ +-+-+-+-+-+-+");
+                "_________                                                        _________          ______  ___                 _________              \n" +
+                "__  ____/_______________   __________________________________    ______  /____      ___   |/  /_______________________  /_____ ________\n" +
+                "_  /    _  __ \\_  __ \\_ | / /  _ \\_  ___/_  ___/  __ \\_  ___/    _  __  /_  _ \\     __  /|_/ /_  __ \\_  __ \\  _ \\  __  /_  __ `/_  ___/\n" +
+                "/ /___  / /_/ /  / / /_ |/ //  __/  /   _(__  )/ /_/ /  /        / /_/ / /  __/     _  /  / / / /_/ /  / / /  __/ /_/ / / /_/ /_(__  ) \n" +
+                "\\____/  \\____//_/ /_/_____/ \\___//_/    /____/ \\____//_/         \\__,_/  \\___/      /_/  /_/  \\____//_/ /_/\\___/\\__,_/  \\__,_/ /____/  \n" +
+                "                                                                                                                                      ");
+        System.out.println("\nBy Luis Huanca (huanca.luis@gmail.com)");
         System.out.println("\n*************************************************");
-        System.out.println("modo de uso: [cantidad] [moneda1] a [moneda2]");
-        System.out.println("ejemplo: 1000 dolares a soles");
-        System.out.println("Para cerrar el programa escribe: salir");
+        System.out.println("MODO DE USO: [cantidad] [moneda1] a [moneda2]");
+        System.out.println("EJEMPLO: 1000 dolares a soles");
+        System.out.println("'Para cerrar el programa escribe: salir'");
         System.out.println("*************************************************");
 
         while (true) {
