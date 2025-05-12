@@ -16,7 +16,7 @@ public class Principal {
 
         while (true) {
             try {
-            System.out.println("\ningresa monto: ");
+            System.out.println("\nIngresa la tasa de cambio que deseas consultar:");
             String frase = scanner.nextLine();
             if (frase.toLowerCase().trim().equals("salir")) {
                 System.out.println("Programa finalizado");
@@ -25,6 +25,7 @@ public class Principal {
 
             FraseConversor.Resultado resultado = FraseConversor.analizar(frase);
             DecimalFormat formato = new DecimalFormat("#.##");
+
             assert resultado != null;
 
             Conversor moneda = consultaApi.consultar(
