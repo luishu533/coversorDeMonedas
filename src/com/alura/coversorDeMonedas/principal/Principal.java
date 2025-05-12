@@ -23,9 +23,19 @@ public class Principal {
                     }
 
                     FraseConversor.Resultado resultado = FraseConversor.analizar(frase);
-                    DecimalFormat formato = new DecimalFormat("#.##");
 
                     assert resultado != null;
+
+                    if (resultado.monedaOrigen().equals(resultado.monedaDestino())) {
+                        System.out.println("Las monedas de origen y destino son iguales.");
+                        continue;
+                    }
+                    if (resultado.cantidad() <= 0) {
+                        System.out.println("La cantidad debe ser mayor a cero.");
+                        continue;
+                    }
+
+                    DecimalFormat formato = new DecimalFormat("#.##");
 
                     Conversor moneda = consultaApi.consultar(
                             DatosMoneda.obtenerCodigoIso(resultado.monedaOrigen()),
@@ -48,8 +58,14 @@ public class Principal {
                                     resultado.monedaDestino() + "\nÚltima actualización: " +
                                     fecha.format(formatoEspanol));
 
+                } catch (NumberFormatException e) {
+                    System.out.println("Error: La cantidad ingresada no es un número válido.");
+                } catch (NullPointerException e) {
+                    System.out.println("Error: No se pudo obtener la tasa de cambio.");
+                } catch (IllegalArgumentException e) {
+                    System.out.println("Error: " + e.getMessage());
                 } catch (Exception e) {
-                    System.out.println("cantidad no valida");
+                    System.out.println("Error inesperado: " + e.getMessage());
                 }
             }
         }
