@@ -71,7 +71,7 @@ destino, y realiza la conversión mostrando el resultado.
 
 ## API Utilizada
 El proyecto utiliza la API de ExchangeRate-API para obtener las tasas de cambio. Asegúrate de reemplazar la clave 
-de API en ConsultaApi con tu propia clave si es necesario.
+de API en [ConsultaApi](https://www.exchangerate-api.com/) con tu propia clave si es necesario.
 
 ## Contribuciones
 Si deseas contribuir a este proyecto, por favor abre un issue o envía un pull request.
