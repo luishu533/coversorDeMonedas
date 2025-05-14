@@ -5,6 +5,9 @@ curso "Java Orientado a Objetos G8 - ONE" que permite convertir montos entre dif
 tipo Exchange Rate. El programa toma una entrada en formato de texto, analiza la cantidad y las monedas de origen y 
 destino, y realiza la conversión mostrando el resultado.
 
+![gifDelProyecto](https://github.com/user-attachments/assets/cd3bf2ee-1470-492c-aab5-4e2676fc37de)
+
+
 ## Características
 
 - Conversión de monedas entre diferentes divisas.
